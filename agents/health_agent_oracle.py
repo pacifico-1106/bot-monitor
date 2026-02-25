@@ -1,5 +1,5 @@
 """
-Tokyo307 Health Agent for Oracle Cloud
+Health Agent for Oracle Cloud
 Discord Bots (Sales & Admin) 監視用ヘルスチェックエージェント
 """
 import requests

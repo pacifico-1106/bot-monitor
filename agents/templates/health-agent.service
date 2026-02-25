@@ -1,5 +1,5 @@
 [Unit]
-Description=Tokyo307 Health Agent
+Description=Health Agent
 After=network.target
 
 [Service]

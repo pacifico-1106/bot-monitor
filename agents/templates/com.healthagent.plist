@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Label</key>
-    <string>com.tokyo307.healthagent</string>
+    <string>com.healthagent</string>
 
     <key>ProgramArguments</key>
     <array>

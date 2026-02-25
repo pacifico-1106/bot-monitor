@@ -1,5 +1,5 @@
 """
-Tokyo307 Health Agent for Mac mini / MacBook Air
+Health Agent for Mac mini / MacBook Air
 OpenClaw環境用のヘルスチェックエージェント
 """
 import requests

@@ -1,6 +1,6 @@
 # Vercel デプロイガイド
 
-Tokyo307 Bot Monitor を Vercel にデプロイする手順です。
+Bot Monitor を Vercel にデプロイする手順です。
 
 ## 1. Vercel アカウント準備
 

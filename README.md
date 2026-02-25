@@ -1,6 +1,6 @@
-# Tokyo307 Bot Monitor
+# Bot Monitor
 
-Tokyo307inc AI System の統合監視ダッシュボード
+AI System の統合監視ダッシュボード
 
 ## システム構成
 
@@ -40,4 +40,4 @@ vercel --prod
 
 ## ライセンス
 
-Private - Tokyo307inc
+Private
