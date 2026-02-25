@@ -1,0 +1,24 @@
+[Unit]
+Description=Tokyo307 Health Agent
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/opt/health-agent
+ExecStart=/usr/bin/python3 /opt/health-agent/health_agent.py
+Restart=always
+RestartSec=10
+
+# 環境変数（実際の値に置き換えてください）
+Environment="DASHBOARD_API_URL=https://your-vercel-app.vercel.app/api/health"
+Environment="HEALTH_API_KEY=your-secret-api-key"
+Environment="MACHINE_ID=oracle-cloud"
+
+# ログ設定
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=health-agent
+
+[Install]
+WantedBy=multi-user.target
