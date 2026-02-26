@@ -31,11 +31,18 @@ def get_system_info():
     }
 
 def check_openclaw_running():
-    """OpenClaw が起動しているか確認"""
+    """OpenClaw が起動しているか確認（Claude Desktop/Codeは除外）"""
     for proc in psutil.process_iter(['name', 'cmdline']):
         try:
             cmdline = ' '.join(proc.info['cmdline'] or [])
-            if 'openclaw' in cmdline.lower() or 'claude' in cmdline.lower():
+            cmdline_lower = cmdline.lower()
+
+            # Claude Desktop や Claude Code は除外
+            if 'claude.app' in cmdline_lower or 'claude-code' in cmdline_lower:
+                continue
+
+            # OpenClaw のみ検出
+            if 'openclaw' in cmdline_lower:
                 return True
         except (psutil.NoSuchProcess, psutil.AccessDenied):
             pass
